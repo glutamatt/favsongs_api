@@ -1,5 +1,9 @@
 <?php
 
+/**
+* Prepare your DB and rock on
+*/
+
 spl_autoload_register(function($c){
     @include preg_replace('#\\\|_(?!.+\\\)#','/',$c).'.php';
 });
